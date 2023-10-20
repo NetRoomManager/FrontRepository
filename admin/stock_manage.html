@@ -3,7 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="import" href="../admin/header.html" />
         <title>재고관리</title>
     </head>
-    <body></body>
+    <body>
+        <div id="headerContent"></div>
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    url: "header.html",
+                    dataType: "html",
+                    success: function (response) {
+                        $("#headerContent").html(response);
+                    },
+                });
+            });
+        </script>
+    </body>
 </html>

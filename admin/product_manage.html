@@ -1,9 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <header id="header" class="fixed-top">
+            <script>
+                loadHTML("../admin/header.html");
+            </script>
+        </header>
         <title>제품관리</title>
     </head>
-    <body></body>
+    <body>
+        <div id="headerContent"></div>
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    url: "header.html",
+                    dataType: "html",
+                    success: function (response) {
+                        $("#headerContent").html(response);
+                    },
+                });
+            });
+        </script>
+    </body>
 </html>

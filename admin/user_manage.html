@@ -3,7 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>고객관리</title>
+        <header id="header" class="fixed-top">
+            <script>
+                loadHTML("header.html");
+            </script>
+        </header>
     </head>
-    <body></body>
+    <body>
+        <div id="headerContent"></div>
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    url: "header.html",
+                    dataType: "html",
+                    success: function (response) {
+                        $("#headerContent").html(response);
+                    },
+                });
+            });
+        </script>
+    </body>
 </html>
