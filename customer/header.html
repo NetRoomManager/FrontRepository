@@ -8,28 +8,176 @@
             rel="stylesheet"
         />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <title>Admin</title>
-        <body>
-            <div id="test"></div>
+        <body style="background-image: url(https://p4.wallpaperbetter.com/wallpaper/995/48/877/room-wallpaper-preview.jpg);">
+           
+            <!-- center choice button-->
+            <div class="container">
+                <div class="row" style="width:390px; margin:auto; text-align: center; padding-left: 0; padding-right: 0;">
+                  <div class="col-sm-4 text-white">
+                    <button class="text-bg-primary">요금제 충전</button>
+                  </div>
+                  <div class="col-sm-4 text-white">
+                    <button class="text-bg-primary">먹거리 주문</button>
+                  </div>
+                   <div class="col-sm-4 text-white">
+                    <button id="closeBtn" class="text-bg-primary", class="alert alert danger" data-bs-toggle="modal" data-bs-target="#myModal">사용종료</button>
+                    
+                  </div>
+
+                  <!-- 모달 창 -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                        <div class="modal-body">
+                        <p>컴퓨터를 종료하시겠습니까?</p>
+                        <p id="countdown">5</p>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+                
+
+
+
+              </div>
+
+            
+
+            </div>
+
+              <!-- right choice button -->
+              <div id="opeknSideBtn" class="text-bg-dark p-0 position-relative top-0 start-75 end-10 visua" style="width: 400px; height: 520px; font-size: 12px; left: 68%;"> 
+
+                <div class="container mt-3 p-0">
+                    <ul class="list-group d-flex list-group-horizontal justify-content-between">
+                        <li class="list-group-item" style="border-radius: 0; background-color: darkgrey; font-weight: bold;">netRoom PC</li>
+                        <li class="list-group-item p-0"style="width: 35px; border-radius: 10%; background-color: darkgrey;"><button class="btn btn-secondary btn-close" aria-label="Close" style="width: 25px; height: 25px;"></button></li>
+                    </ul>
+                </div>
+
+                <div class="top1 d-flex justify-content-between" >
+                    <div class="fw-bold">no.71</div>
+                    <div class="d-flex">
+                        <div class="border border-secondary" style="border-radius: 15%;"><button id="changeBtn" class="btn btn-secondary">자리이동</button></div>
+                    </div>
+                </div>
+
+                <div class="top2 container p-1">
+                    <ul class="list-group d-flex list-group-horizontal justify-content-between">
+                        <li class="list-group-item " style="border-radius: 0; background-color: darkgrey; font-weight: bold;">ID : 110002448</li>
+                        <li class="list-group-item " style="border-radius: 0; background-color: darkgrey; font-size: 10px; font-weight: bold;">★ pc 인증</li>
+                    </ul>
+                </div>
+                
+                <div class="timeTap" class="container mt-3">
+                    <ul class="list-group list-group-horizontal" style="padding-top: 10px; padding-bottom: 10px;">
+                        <li class="list-group-item" style="background-color: purple; height: 47px;"><a href="https://www.geto.co.kr" style="text-decoration: none;">◀ 제휴혜택 모아보기</a></li>
+                        <li class="list-group-item text-bg-dark" style="height: 47px;">사용요금 <br>2,000</li>
+                        <li class="list-group-item text-bg-dark" style="height: 47px;">남은시간 <br>01:24</li>
+                    </ul>
+            </div>
+            
+            <div class="payButton" style="display: flex; font-size: 15px; font-weight: lighter; padding-bottom: 10px; padding-left: 15px; justify-content: space-evenly;">
+                <button class="btn btn-primary" style="height: 40px; font-size: 11px; padding-left: 10px;">먹거리 주문</button>
+                <button class="btn btn-primary" style="height: 40px; font-size: 11px; padding-left: 10px;">요금제 구매</button>
+                <button class="btn btn-primary" style="height: 40px; font-size: 11px; padding-left: 10px;">쿠폰함</button>
+                <button class="btn btn-primary" style="height: 40px; font-size: 11px; padding-left: 10px;">쿠폰 사용</button>
+            </div>
+         
+            <div class="remark" style="display: flex; padding-left: 15px; justify-content: space-evenly;">
+                <button class="btn btn-secondary">선불연장</button>
+                <button class="btn btn-secondary">호출</button>
+                <button class="btn btn-secondary">메세지</button>
+                <button class="btn btn-secondary">요금정보</button> 
+            </div>
+            
+     <div class="d-flex">
+            <div class="logoLeft d-flex flex-wrap" style="width: 50px;">
+                <button class="rounded-circle" style="width: 50px; height: 40px;"><img src="../img/PNG/com.nexon.fo4m.png" class="rounded-circle w-50"><a href="https://fconline.nexon.com/main/index"  style="text-decoration-line: none; height: 50px;"><p style="color: black;">피파</p></a></button>
+                <button class="rounded-circle" style="width: 50px; height: 40px;"><img src="../img/PNG/com.fps.battleground.shooter.honor.ww2.black.duty.png" class="rounded-circle w-50"><a href="https://www.callofduty.com/ko"  style="text-decoration-line: none;"><p style="color: black;">콜옵</p></a></button>
+                <button class="rounded-circle" style="width: 50px; height: 40px;"><img src="../img/PNG/com.nexon.kart.png" class="rounded-circle  w-50"><a href="https://kartrush.nexon.com/kr-launching"  style="text-decoration-line: none;"><p style="color: black;">카트</p></a></button>
+                <button class="rounded-circle" style="width: 50px; height: 40px;"><img src="../img/PNG/com.netease.idv.googleplay.png" class="rounded-circle w-50"><a href="https://kartrush.nexon.com/kr-launching"  style="text-decoration-line: none;"><p style="color: black;">데드</p></a></button>
+                <button class="rounded-circle" style="width: 50px; height: 40px;"><img src="../img/PNG/com.aceproject.mpbr.aos.dist.png" class="rounded-circle w-50"><a href="https://poker.hangame.com/"  style="text-decoration-line: none;"><p style="color: black;">포커</p></a></button>
+                <button class="rounded-circle" style="width: 50px; height: 40px;"><img src="../img/PNG/us.kr.baseballnine.png" class="rounded-circle w-50"><a href="https://ma9.hangame.com/main.asp"  style="text-decoration-line: none;"><p style="color: black;">야구</p></a></button>
+            </div>
+
+        <div class="logoRight">
+
+                        <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/pc방 광고.jpg" alt="logo1" class="d-block w-200 h-200" style="width: 345px; height: 245px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/pc방 광고2.jpg" alt="logo2" class="d-block w-200 h-200" style="width: 345px; height: 245px;">
+                </div>
+                </div>
+
+                
+                
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+     </div>
+          
+        </div>
+
+         <!-- Bootstrap JavaScript 파일 (CDN 링크) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+
+
+
             <script>
-                let time = 3;
-                let min = "";
-                let sec = "";
+               document.getElementById('closeBtn').addEventListener('click', function() {
+               var countdownElement = document.getElementById('countdown');
+               var countdownValue = 5; // 5초 카운트다운
 
-                const fn = setInterval(() => {
-                    min = parseInt(time / 60);
-                    sec = time % 60;
+            // 카운트다운 함수
+            function startCountdown() {
+                countdownElement.textContent = countdownValue;
+                countdownValue--;
 
-                    document.getElementById("test").innerHTML =
-                        min + "분" + sec + "초";
-                    time--;
-
-                    if (time < 0) {
-                        clearInterval(fn);
-                        document.getElementById("test").innerHTML = "시간초과";
+                if (countdownValue < -1) {
+                // 시간이 다 되면 모달을 닫고 메시지 표시
+                $('#myModal').modal('hide');
+                alert('컴퓨터가 종료됩니다.');
+                } else if (countdownValue === -1) {
+                    location.href = '/' 
+                }
+                else {
+                setTimeout(startCountdown, 1000);
                     }
-                }, 1000);
+            }
+
+                startCountdown(); // 카운트다운 시작
+                });
+
+              // 자리이동 눌렸을 때, 알림창 만들기  
+              document.getElementById('changeBtn').addEventListener('click', function() {
+                alert('원하는 좌석에서 로그인하세요!')
+              })
+                
+                
             </script>
         </body>
     </head>
