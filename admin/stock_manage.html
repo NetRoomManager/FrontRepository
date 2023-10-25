@@ -58,7 +58,7 @@
         </nav>
         <div class="container pt-4">
             <form class="d-flex">
-                <div class="mb-3 pe-2">
+                <div class="mb-3 pe-2" style="width: 150px;">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>가격</option>
                         <option value="1">현재재고</option>
@@ -67,18 +67,83 @@
                     </select>
                 </div>
                 <div class="mb-3 pe-2">
-                  <input type="number" class="form-control" id="exampleInputPassword1">
+                  <input type="number" class="form-control" id="searchRangeOne">
                 </div>
                 <p class="h3">~</p>
                 <div class="mb-3 px-2">
-                  <input type="number" class="form-control" id="exampleInputPassword1">
+                  <input type="number" class="form-control" id="searchRangeTwo">
                 </div>
                 <div>
                     <button type="submit" class="btn btn-secondary" >범위검색</button>
                 </div>
             </form>
         </div>
-        
+        <div class="container">
+            <form class="d-flex">
+                <div class="mb-3 pe-2" style="width: 150px;">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>전체</option>
+                        <option value="1">전체</option>
+                        <option value="2">상품번호</option>
+                        <option value="3">상품명</option>
+                        <option value="4">상품분류</option>
+                    </select>
+                </div>
+                <div class="mb-3 pe-2">
+                  <input type="text" class="form-control" id="searchName">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-secondary" >범위검색</button>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-dark text-center">
+                        <th scope="col">#</th>
+                        <th scope="col">상품번호</th>
+                        <th scope="col">상품명</th>
+                        <th scope="col">상품분류</th>
+                        <th scope="col">가격</th>
+                        <th scope="col">현재재고</th>
+                        <th scope="col">금일 판매갯수</th>
+                        <th scope="col">평균 판매갯수</th>
+                        <th scope="col">소진 예상일</th>
+                        <th scope="col">상세보기</th>
+                        <th scope="col">삭제</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <th class="pt-3" scope="row">1</th>
+                        <td class="pt-3" >Mark</td>
+                        <td class="pt-3" >Otto</td>
+                        <td class="pt-3" >@mdo</td>
+                        <td class="pt-3" >Mark</td>
+                        <td class="pt-3" >Otto</td>
+                        <td class="pt-3" >@mdo</td>
+                        <td class="pt-3" >Mark</td>
+                        <td class="pt-3" >Otto</td>
+                        <td><button type="button" class="btn btn-outline-warning" disabled>조회</button></td>
+                        <td><button type="button" class="btn btn-outline-danger" disabled>삭제</button></td>
+                    </tr>
+                    <tr class="text-center">
+                        <th class="pt-3" scope="row">2</th>
+                        <td class="pt-3" >Mark</td>
+                        <td class="pt-3" >Otto</td>
+                        <td class="pt-3" >@mdo</td>
+                        <td class="pt-3" >Mark</td>
+                        <td class="pt-3" >Otto</td>
+                        <td class="pt-3" >@mdo</td>
+                        <td class="pt-3" >Mark</td>
+                        <td class="pt-3" >Otto</td>
+                        <td><button type="button" class="btn btn-outline-warning">조회</button></td>
+                        <td><button type="button" class="btn btn-outline-danger">삭제</button></td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
         <script>
             $(document).ready(function () {
                 $.ajax({
