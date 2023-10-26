@@ -4,3 +4,6 @@ html {
 .hidden {
     display: none;
 }
+.carousel-inner {
+    list-style: none;
+}
