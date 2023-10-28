@@ -21,6 +21,9 @@
             #productUpdate table > tbody > tr > th {
                 padding-top: 15px;
             }
+            #detail_check_modal table > tbody > tr > th {
+                padding-top: 12px;
+            }
         </style>
     </head>
     <body>
@@ -214,8 +217,7 @@
                         <th scope="col">금일 판매갯수</th>
                         <th scope="col">평균 판매갯수</th>
                         <th scope="col">소진 예상일</th>
-                        <th scope="col">상세보기</th>
-                        <th scope="col">삭제</th>
+                        <th scope="col" colspan="2">관리</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -233,8 +235,8 @@
                         <td class="pt-3" >@mdo</td>
                         <td class="pt-3" >Mark</td>
                         <td class="pt-3" >Otto</td>
-                        <td><button type="button" class="btn btn-outline-warning" disabled>조회</button></td>
                         <td><button type="button" class="btn btn-outline-danger" disabled>삭제</button></td>
+                        <td><button type="button" class="btn btn-outline-warning" disabled>조회</button></td>
                     </tr>
                     <tr class="text-center">
                         <th class="pt-3" scope="row">
@@ -250,12 +252,12 @@
                         <td class="pt-3" >@mdo</td>
                         <td class="pt-3" >Mark</td>
                         <td class="pt-3" >Otto</td>
-                        <td><button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#myModal">조회</button></td>
                         <td><button type="button" class="btn btn-outline-danger">삭제</button></td>
+                        <td><button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#detail_check_modal">조회</button></td>
                     </tr>
                 </tbody>
               </table>
-              <div class="modal" id="myModal">
+              <div  class="modal fade" id="detail_check_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                 <div class="modal-content">
             
